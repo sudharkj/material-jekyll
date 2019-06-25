@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     material-jekyll (0.1.0)
+      jekyll (~> 3.8)
 
 GEM
   remote: https://rubygems.org/
@@ -78,7 +79,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  jekyll (~> 3.8)
   material-jekyll!
   rake (~> 10.0)
   rspec (~> 3.0)
