@@ -1,3 +1,30 @@
 #################
 # Site settings #
 #################
+
+#profile-link: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+profile-color: indigo
+avatar-link: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+name: Ravi
+title: Photographer
+caption: Budding photographer looking to develop his skills and is eager in learning new stuff.
+
+#######################
+# Attachment settings #
+#######################
+
+attachment-text: Resume
+attachment-link: https://github.com/
+
+################
+# Social Links #
+################
+
+#facebook: https://www.facebook.com/
+#twitter: https://twitter.com/
+#linkedin: https://linkedin.com/
+#instagram: https://www.instagram.com/
+#stack-overflow: https://stackoverflow.com/
+#youtube: https://youtube.com/
+#github: https://github.com/
+#reddit: https://www.reddit.com/

@@ -1,0 +1,90 @@
+.profile-card {
+    max-width: 22rem;
+    margin: 1px 0px 3px;
+}
+
+.profile-card .card-up {
+    overflow: hidden;
+    height: 120px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem
+}
+
+.profile-card .avatar {
+    border-radius: 50%;
+    width: 120px;
+    margin-top: -75px;
+    overflow: hidden
+}
+
+.profile-card .avatar img {
+    width: 100%
+}
+
+.profile-card .card-body {
+    text-align: center
+}
+
+.fb-ic {
+    color: #3b5998!important
+}
+
+.fb-ic:focus,.fb-ic:hover {
+    color: #3b5998
+}
+
+.tw-ic {
+    color: #55acee!important
+}
+
+.tw-ic:focus,.tw-ic:hover {
+    color: #55acee
+}
+
+.li-ic {
+    color: #0082ca!important
+}
+
+.li-ic:focus,.li-ic:hover {
+    color: #0082ca
+}
+
+.ins-ic {
+    color: #2e5e86!important
+}
+
+.ins-ic:focus,.ins-ic:hover {
+    color: #2e5e86
+}
+
+.so-ic {
+    color: #ffac44!important
+}
+
+.so-ic:focus,.so-ic:hover {
+    color: #ffac44
+}
+
+.yt-ic {
+    color: #ed302f!important
+}
+
+.yt-ic:focus,.yt-ic:hover {
+    color: #ed302f
+}
+
+.git-ic {
+    color: #333!important
+}
+
+.git-ic:focus,.git-ic:hover {
+    color: #333
+}
+
+.reddit-ic {
+    color: #ff4500!important
+}
+
+.reddit-ic:focus,.reddit-ic:hover {
+    color: #ff4500
+}

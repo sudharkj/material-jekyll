@@ -1,0 +1,65 @@
+<!-- Card -->
+<div class="card profile-card">
+
+    {% if site.profile-link %}
+    <!-- Background image -->
+    <img  class="card-img-top" src={{ site.profile-link }} alt="profile">
+    {% else %}
+    <!-- Background color -->
+    <div class="card-up {{ site.profile-color }} lighten-1"></div>
+    {% endif %}
+
+    <!-- Avatar -->
+    <div class="avatar mx-auto white">
+        <img src={{ site.avatar-link }} class="rounded-circle" alt="avatar">
+    </div>
+
+    <!-- Content -->
+    <div class="card-body">
+        <!-- Name -->
+        <h4 class="card-title"><strong>{{ site.name }}</strong></h4>
+        <!-- Title -->
+        <h5 class="indigo-text py-2"><strong>{{ site.title }}</strong></h5>
+        <!-- Caption -->
+        <p>{{ site.caption }}</p>
+        <hr>
+        <!-- Attachment -->
+        {% if site.attachment-text and site.attachment-link %}
+        <a class="mr-3" href={{ site.attachment-link }}>{{ site.attachment-text }} <i class="fas fa-paperclip" aria-hidden="true"></i></a>
+        <br /><br />
+        {% endif %}
+        <!-- Facebook -->
+        {% if site.facebook %}
+        <a class="mr-3 fb-ic" href={{ site.facebook }}><i class="fab fa-lg fa-facebook-f"></i></a>
+        {% endif %}
+        <!-- Twitter -->
+        {% if site.twitter %}
+        <a class="mr-3 tw-ic" href={{ site.twitter }}><i class="fab fa-lg fa-twitter"></i></a>
+        {% endif %}
+        <!-- Linkedin -->
+        {% if site.linkedin %}
+        <a class="mr-3 li-ic" href={{ site.linkedin }}><i class="fab fa-lg fa-linkedin-in"></i></a>
+        {% endif %}
+        <!-- Instagram -->
+        {% if site.instagram %}
+        <a class="mr-3 ins-ic" href={{ site.instagram }}><i class="fab fa-lg fa-instagram"></i></a>
+        {% endif %}
+        <!-- Stack-Overflow -->
+        {% if site.stack-overflow %}
+        <a class="mr-3 so-ic" href={{ site.stack-overflow }}><i class="fab fa-lg fa-stack-overflow"></i></a>
+        {% endif %}
+        <!-- Youtube -->
+        {% if site.youtube %}
+        <a class="mr-3 yt-ic" href={{ site.youtube }}><i class="fab fa-lg fa-youtube"></i></a>
+        {% endif %}
+        <!-- Github -->
+        {% if site.github %}
+        <a class="mr-3 git-ic" href={{ site.github }}><i class="fab fa-lg fa-github"></i></a>
+        {% endif %}
+        <!-- Reddit -->
+        {% if site.reddit %}
+        <a class="mr-3 reddit-ic" href={{ site.reddit }}><i class="fab fa-lg fa-reddit-alien"></i></a>
+        {% endif %}
+    </div>
+
+</div>
