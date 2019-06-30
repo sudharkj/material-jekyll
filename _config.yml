@@ -28,3 +28,10 @@ attachment-link: https://github.com/
 #youtube: https://youtube.com/
 #github: https://github.com/
 #reddit: https://www.reddit.com/
+
+################
+# Page Details #
+################
+
+show-table-of-contents: true
+landing-page-order: posts/projects.md, posts/all-projects.md

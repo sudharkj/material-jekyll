@@ -1,6 +1,5 @@
-.profile-card {
-    max-width: 22rem;
-    margin: 1px 0px 3px;
+main {
+    background-color: #ededee;
 }
 
 .profile-card .card-up {

@@ -19,14 +19,26 @@
 <body>
 
 <!-- Start your project here-->
-<main>
+<main class="min-vh-100">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mt-1 mb-2 pl-1 pr-1">
                 {% include profile-card.html %}
             </div>
             <div class="col-12 col-sm-6 col-md-8">
-                {{ content }}
+                <div class="row">
+                    <div class="content">
+                        {% assign modals = site.landing-page-order | split:", " %}
+                        {% for modal in modals %}
+                        <div class="card mt-1 mb-2">
+                            <div class="card-body">
+                                {% capture my_include %}{% include_relative {{ modal }} %}{% endcapture %}
+                                {{ my_include | markdownify }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -42,6 +54,21 @@
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+<!-- Custom JavaScript -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+{% if site.show-table-of-contents %}
+<script>
+    $(function () {
+        showTableOfContents(true);
+    })
+</script>
+{% else %}
+<script>
+    $(function () {
+        showTableOfContents(false);
+    })
+</script>
+{% endif %}
 </body>
 
 </html>
