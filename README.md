@@ -17,20 +17,6 @@ the static files with some customisations.
     ```
    and open `http://0.0.0.0:4000/` in the browser to see the changes.
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'material-jekyll'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install material-jekyll
-
 ## Usage
 
 1. Create an empty project for your site [\[ref: github\]](https://pages.github.com/).
@@ -70,6 +56,7 @@ Note that this is intended to show your profile in a short card.
 | landing-page-order | comma with space separated list of markdown file names | markdown files showing various content is added and template takes care of formatting |
 
 **Note:**
+* Config values are loaded only once and so any config changes to the variables need server restart.
 * Currently, specific dimensions are not set for profile-link and avatar-link. So, proper dimension images are to be added. 
 * All referred links should be public.
 * This is a base theme to support MDB in Jekyll pages. So, custom templates are allowed 
